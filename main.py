@@ -23,22 +23,26 @@ form = """
                 width: 540px;
                 height: 120px;
             }}
+            h1 {{
+                text-align: center;
+            }}
         </style>
     </head>
     <body>
-        <form method="POST">
-            <label> Rotate By: 
-                <input type="text" name="rot" id="rot" value="0"/>
-            </label>
-
+        <header>
+            <h1>Web Caesar</h1>
+        <
+        <form action="/" method="POST">
+            <label for="rotate_by"> Rotate By:</label>
+            <input id="rotate_by" type="text" name="rot" id="rot" value="0"/>
+            
             <br>
 
-            <textarea name="text" id="text"{0} />
-            </textarea>
+            <textarea id="textarea" name="text"> {0} </textarea>
 
             <br>
            
-            <input type="submit" />
+            <input type="submit" value="Encrypt"/>
           
         
         </form>
